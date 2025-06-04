@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplayer RPS</title>
+</head>
+<body>
+  <h2>Multiplayer Rock-Paper-Scissors</h2>
+  <input id="name" placeholder="Enter your name">
+  <button onclick="joinGame()">Join</button>
+
+  <div id="game" style="display:none;">
+    <p id="status"></p>
+    <button onclick="sendMove('rock')">Rock</button>
+    <button onclick="sendMove('paper')">Paper</button>
+    <button onclick="sendMove('scissors')">Scissors</button>
+  </div>
+
+  <p id="result"></p>
+
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
